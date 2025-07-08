@@ -1,0 +1,241 @@
+/* AJUSTES GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+/* HEADER Y NAV */
+header {
+  background-color: #fbf1fbca;
+  filter: drop-shadow(0 0.8mm 0.6mm rgba(161, 0, 210, 0.17));
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 15px;
+  color: #6e00ff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline 2px;
+  text-underline-offset: 5px;
+}
+
+.nav-header li {
+  list-style: none;
+  margin: 0 25px;
+  
+}
+
+.nav-header ul {
+  display: flex;
+  justify-content: end;
+  width: 75%;
+}
+
+.img-logo {
+  width: 15%;
+}
+
+/* HOME */
+main {
+  padding: 30px;
+  background-image: url(../img/Portada-2-desktop_Mesa\ de\ trabajo\ 1.png);
+  background-size: cover;
+  background-color: black;
+}
+
+.titulo-home {
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+.conteiner-titulo-home {
+  background: linear-gradient(to right, #6e00ff, #c521ec);
+  margin-bottom: 1.5rem;
+  width: -webkit-max-content;
+  width: max-content;
+  border-radius: 8px;
+  padding: 0.5em;
+}
+
+.p-banner {
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: auto;
+  color: white;
+}
+
+.btn-home {
+  padding: 10px 15px;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+  background-color: transparent;
+  border: solid 2px #6e00ff;
+}
+
+.btn-home a {
+  text-decoration: none;
+  color: #6e00ff;
+}
+
+.video-home {
+  text-align: center;
+  padding: 40px;
+}
+
+.video-home iframe {
+  padding: 20px;
+  filter: drop-shadow(0 0.8mm 0.6mm rgba(161, 0, 210, 0.17));
+}
+
+/* ENCABEZADOS */
+h1 {
+  color: #6e00ff;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+h2 {
+  color: #c521ec;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+h3 {
+  color: #c521ec;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 15px;
+  color: black;
+  line-height: 20px;
+}
+
+/* FOOTER  */
+footer {
+  background-color: #fbf1fbca;
+  filter: drop-shadow(0 0.8mm 0.6mm rgba(161, 0, 210, 0.17));
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 12px;
+}
+
+/* PROYECTOS y ESTUDIOS*/
+.seccion-web {
+  padding: 20px;
+}
+
+.imagen-web {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.primer-div-proyectos {
+  text-align: center;
+  margin: 20px;
+}
+
+.p-proyecto {
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 15px;
+  color: grey;
+}
+
+.proyectos-flor {
+  text-align: center;
+  margin: 15px;
+  padding: auto;
+}
+
+/* FORMULARIO */
+.conteiner-form {
+  display: block;
+  padding: 30px;
+}
+
+form {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #6e00ff;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  display: block;
+  text-align: justify;
+  background-color: #fbf1fbca;
+  border: solid 2px #6e00ff;
+  color: #6e00ff;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 15px;
+  background-color: transparent;
+  border: solid 2px #6e00ff;
+}
+
+/* EXPERIENCIA */
+.conteiner-experiencia {
+  padding: 30px;
+  height: 80vh;
+}
+
+.trabajos {
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 18px;
+  padding-top: 1em;
+}
+
+.experiencia-list ul {
+  list-style-type: circle;
+}
+
+.experiencia-list li::marker {
+  color: #c521ec;
+  font-size: 18px;
+}
+
+.puesto {
+  color: #c521ec;
+  font-weight: 700;
+}

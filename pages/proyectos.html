@@ -14,8 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="body-estudios">
+    <!-- HEADER -->
     <header>
       <a href="../index.html"
         ><img
@@ -23,19 +28,54 @@
           alt="Logo Flor Van Meegroot Desarrolladora Web"
           class="img-logo"
       /></a>
-      <nav class="nav-header">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../pages/proyectos.html">Proyectos</a></li>
-          <li><a href="../pages/estudios.html">Estudios</a></li>
-          <li><a href="../pages/experiencia.html">Experiencia</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuHamburguesa"
+            aria-controls="menuHamburguesa"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuHamburguesa">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/estudios.html">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/experiencia.html"
+                  >Experiencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
+
     <section class="seccion-web">
       <div class="primer-div-proyectos">
-        <h1>Mis Proyectos</h1>
+        <h1 class="h1-estudios">Mis Proyectos<span>👩‍💻</span></h1>
         <p class="p-proyecto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas
           modi nesciunt ullam porro optio, et voluptatum perferendis officia
@@ -46,61 +86,93 @@
           culpa omnis sint, iste assumenda.
         </p>
       </div>
+
       <!-- CARDS DE PROYECTOS REALIZADOS -->
-      <div class="proyectos-flor">
-        <img
-          class="imagen-web"
-          src="../img/Autocity-mockup.png"
-          alt="Sitio web Autocity Mockup"
-        />
-        <h3>Sitio Web Concesionaria Autocity</h3>
-        <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
-        <button class="btn-home">
-        <a href="https://www.autocity.com.ar" target="_blank">Visitar Autocity</a>
-      </button>
-      </div>
+      <div class="grid-estudios">
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/Autocity-mockup.png"
+            alt="Sitio web Autocity Mockup"
+          />
+          <h3 class="titulo-estudios">Sitio Web Concesionaria Autocity</h3>
+          <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
+          <button class="btn-proyectos">
+            <a href="https://www.autocity.com.ar" target="_blank"
+              >Visitar Autocity</a
+            >
+          </button>
+        </div>
 
-      <div class="proyectos-flor">
-        <img
-          class="imagen-web"
-          src="../img/Denat-mockup.png"
-          alt="Sitio web Denat Mockup"
-        />
-        <h3>Sitio Web Desarrollista Denat</h3>
-        <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
-        <button class="btn-home">
-        <a href="https://www.denat.com.ar" target="_blank">Visitar Denat</a>
-      </button>
-      </div>
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/Denat-mockup.png"
+            alt="Sitio web Denat Mockup"
+          />
+          <h3 class="titulo-estudios">Sitio Web Desarrollista Denat</h3>
+          <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
+          <button class="btn-proyectos">
+            <a href="https://www.denat.com.ar" target="_blank">Visitar Denat</a>
+          </button>
+        </div>
 
-      <div class="proyectos-flor">
-        <img
-          class="imagen-web"
-          src="../img/Accesorios-mockup.png"
-          alt="Sitio web Accesorios Autocity Mockup"
-        />
-        <h3>Sitio Web de Accesorios para la Concesionaria Autocity</h3>
-        <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
-        <button class="btn-home">
-          <a href="https://www.accesorios.autocity.com.ar" target="_blank"
-            >Visitar Accesorios Autocity</a
-          >
-        </button>
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/Accesorios-mockup.png"
+            alt="Sitio web Accesorios Autocity Mockup"
+          />
+          <h3 class="titulo-estudios">
+            Sitio Web de Accesorios para la Concesionaria Autocity
+          </h3>
+          <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
+          <button class="btn-proyectos">
+            <a href="https://www.accesorios.autocity.com.ar" target="_blank"
+              >Visitar Accesorios Autocity</a
+            >
+          </button>
+        </div>
       </div>
     </section>
 
-<!-- FOOTER -->
+    <div class="banner-proyecto">
+      <div class="column">
+        <div class="conteiner-titulo-home">
+          <h1 class="titulo-home"><span>👋</span> ¿Trabajamos juntos?</h1>
+        </div>
+        <p class="p-banner">
+          Contactame para saber como puedo ayudarte a alcanzar tus objetivos o
+          desarrollar ese proyecto especial.
+        </p>
+        <button class="btn-home margin-p">
+          <a href="./contacto.html">Contactame</a>
+        </button>
+      </div>
+
+      <div class="column personaje">
+        <img
+          class="img-flor"
+          src="../img/Flor-personaje-2.png"
+          alt="Flor desarrollando"
+        />
+      </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer>
-      <a href="./index.html"
+      <a href="../index.html"
         ><img
           src="../img/Logo-Flor.png"
           alt="Logo Flor Van Meegroot Desarrolladora Web"
-          style="max-width: 2%"
+          class="logo-footer"
       /></a>
 
       <p>
         Desarrollado por Florencia Van Meegroot - Todos los derechos reservados
       </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

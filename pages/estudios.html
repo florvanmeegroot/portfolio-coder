@@ -14,8 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="body-estudios">
+    <!-- HEADER -->
     <header>
       <a href="../index.html"
         ><img
@@ -23,19 +28,55 @@
           alt="Logo Flor Van Meegroot Desarrolladora Web"
           class="img-logo"
       /></a>
-      <nav class="nav-header">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../pages/proyectos.html">Proyectos</a></li>
-          <li><a href="../pages/estudios.html">Estudios</a></li>
-          <li><a href="../pages/experiencia.html">Experiencia</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuHamburguesa"
+            aria-controls="menuHamburguesa"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuHamburguesa">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/estudios.html">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/experiencia.html"
+                  >Experiencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <section class="seccion-web">
+
+
+    <main class="seccion-web">
       <div class="primer-div-proyectos">
-        <h1>Mis Estudios</h1>
+        <h1 class="h1-estudios">Mis Estudios<span>👩‍🎓</span></h1>
         <p class="p-proyecto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas
           modi nesciunt ullam porro optio, et voluptatum perferendis officia
@@ -47,57 +88,63 @@
         </p>
       </div>
       <!-- CARDS DE ESTUDIOS REALIZADOS -->
-      <div class="proyectos-flor">
-        <img
-          class="imagen-web"
-          src="../img/diseño-grafico-imagen.jpg"
-          alt="Diseño grafico imagen"
-        />
-        <h3>Técnicatura en Diseño gráfico y publicitario IES Siglo 21</h3>
-        <p class="p-proyecto">Finalizado 2012</p>
-      </div>
+      <div class="grid-estudios">
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/diseño-grafico-imagen.jpg"
+            alt="Diseño grafico imagen"
+          />
+          <h3 class="titulo-estudios">Técnicatura en Diseño gráfico y publicitario | IES Siglo 21</h3>
+          <p class="p-proyecto">Finalizado 2012</p>
+        </div>
 
-      <div class="proyectos-flor">
-        <img
-          class="imagen-web"
-          src="../img/diseño-ux-imagen.jpg"
-          alt="Diseño UX-UI imagen"
-        />
-        <h3>Diseño UX-UI Ecosistemas</h3>
-        <p class="p-proyecto">Finalizado 2023</p>
-      </div>
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/diseño-ux-imagen.jpg"
+            alt="Diseño UX-UI imagen"
+          />
+          <h3 class="titulo-estudios">Diseño UX-UI | Ecosistemas</h3>
+          <p class="p-proyecto">Finalizado 2023</p>
+        </div>
 
-      <div class="proyectos-flor">
-        <img
-          class="imagen-web"
-          src="../img/programación-imagen.jpg"
-          alt="programación imagen"
-        />
-        <h3>Técnicatura en programación Teclab</h3>
-        <p class="p-proyecto">Finalizado 2024</p>
-      </div>
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/programación-imagen.jpg"
+            alt="programación imagen"
+          />
+          <h3 class="titulo-estudios">Técnicatura en programación | Teclab</h3>
+          <p class="p-proyecto">Finalizado 2024</p>
+        </div>
 
-      <div class="proyectos-flor">
-        <img
-          class="imagen-web"
-          src="../img/fullstack-imagen.jpg"
-          alt="FullStack imagen"
-        />
-        <h3>Carrera de FullStack Coderhouse</h3>
-        <p class="p-proyecto">En curso</p>
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/fullstack-imagen.jpg"
+            alt="FullStack imagen"
+          />
+          <h3 class="titulo-estudios">Carrera de FullStack | Coderhouse</h3>
+          <p class="p-proyecto">En curso</p>
+        </div>
       </div>
-    </section>
+    </main>
+
+    <!-- FOOTER -->
     <footer>
-      <a href="./index.html"
+      <a href="../index.html"
         ><img
           src="../img/Logo-Flor.png"
           alt="Logo Flor Van Meegroot Desarrolladora Web"
-          class="img-logo"
+          class="logo-footer"
       /></a>
 
       <p>
         Desarrollado por Florencia Van Meegroot - Todos los derechos reservados
       </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

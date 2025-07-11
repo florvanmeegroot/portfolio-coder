@@ -14,8 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="body-estudios">
+    <!-- HEADER -->
     <header>
       <a href="../index.html"
         ><img
@@ -23,50 +28,94 @@
           alt="Logo Flor Van Meegroot Desarrolladora Web"
           class="img-logo"
       /></a>
-      <nav class="nav-header">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../pages/proyectos.html">Proyectos</a></li>
-          <li><a href="../pages/estudios.html">Estudios</a></li>
-          <li><a href="../pages/experiencia.html">Experiencia</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuHamburguesa"
+            aria-controls="menuHamburguesa"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuHamburguesa">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/estudios.html">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/experiencia.html"
+                  >Experiencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <div class="conteiner-form">
-      <h1>Contactate conmigo</h1>
-      <form action="">
-        <label for="nombre">Nombre*</label>
-        <input type="text" name="nombre" id="nombre" required />
+    <main class="main-contacto">
+      <div>
+        <div class="primer-div-proyectos">
+          <h1 class="h1-estudios">Contactate conmigo<span>📱</span></h1>
+        </div>
 
-        <label for="apellido">Apellido*</label>
-        <input type="text" name="apellido" id="apellido" required />
+        <!-- FORMULARIO -->
+        <div class="conteiner-form">
+          <form action="">
+            <label for="nombre">Nombre*</label>
+            <input type="text" name="nombre" id="nombre" required />
 
-        <label for="phone">Teléfono*</label>
-        <input type="tel" name="phone" id="phone" required />
+            <label for="apellido">Apellido*</label>
+            <input type="text" name="apellido" id="apellido" required />
 
-        <label for="email">Correo electrónico*</label>
-        <input type="email" name="email" id="email" required />
+            <label for="phone">Teléfono*</label>
+            <input type="tel" name="phone" id="phone" required />
 
-        <label for="mensaje">Mensaje</label>
-        <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+            <label for="email">Correo electrónico*</label>
+            <input type="email" name="email" id="email" required />
 
-        <input type="submit" />
-      </form>
-    </div>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" rows="4"></textarea>
 
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
     <footer>
       <a href="../index.html"
         ><img
           src="../img/Logo-Flor.png"
           alt="Logo Flor Van Meegroot Desarrolladora Web"
-          style="max-width: 2%"
+          class="logo-footer"
       /></a>
 
       <p>
         Desarrollado por Florencia Van Meegroot - Todos los derechos reservados
       </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

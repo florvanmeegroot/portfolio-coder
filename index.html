@@ -7,6 +7,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="././css/style.css" />
+
+    <!-- NUEVO CSS QUE USA SCSS -->
+    <link rel="stylesheet" href="././css/estilo.css" />
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +23,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="body-color">
     <!-- HEADER -->
     <header>
       <a href="./index.html"
@@ -79,7 +83,7 @@
       <div class="column">
         <div class="conteiner-titulo-home">
           <h1 class="titulo-home">
-            <span>👋</span> ¡Hola! Bienvenidos a mi web
+            <span class="saludo">👋</span> ¡Hola! Bienvenidos a mi web
           </h1>
         </div>
 
@@ -102,25 +106,72 @@
       </div>
       <div class="column personaje">
         <img
-          class="img-flor"
+          class="img-flor entrar-derecha"
           src="./img/Flor-personaje-Home.png"
           alt="Flor desarrollando"
         />
       </div>
     </main>
 
-    <div class="video-home">
-      <h2 class="h2-video">¿Porqué tener una página web?</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/V7ZVlVGXoBI?si=I1h8q91yL5DvBXiW"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+    <section class="proceso">
+      <div class="step">
+        <h2 class="step-number">01.</h2>
+        <div class="line"></div>
+        <h3 class="step-title">TE ESCUCHO</h3>
+        <p class="step-text">
+          Contame qué necesitás y <br />adónde querés llegar con tu web.
+        </p>
+      </div>
+      <div class="step">
+        <h2 class="step-number">02.</h2>
+        <div class="line"></div>
+        <h3 class="step-title">ANALIZO</h3>
+        <p class="step-text">
+          Reviso tu proyecto y veo cómo <br />puedo ayudarte de forma clara y
+          realista.
+        </p>
+      </div>
+      <div class="step">
+        <h2 class="step-number">03.</h2>
+        <div class="line"></div>
+        <h3 class="step-title">TE PROPONGO</h3>
+        <p class="step-text">
+          Diseño una solución a medida,<br />
+          con enfoque en tus objetivos.
+        </p>
+      </div>
+      <div class="step">
+        <h2 class="step-number">04.</h2>
+        <div class="line"></div>
+        <h3 class="step-title">DESARROLLO</h3>
+        <p class="step-text">
+          Creo tu sitio web con diseño <br />funcional, responsivo y optimizado.
+        </p>
+      </div>
+    </section>
+
+    <div class="banner-dos">
+      <div class="column personaje img-banner-dos">
+        <img
+          class="img-flor entrar-izquierda"
+          src="./img/Flor-personaje-2.png"
+          alt="Flor desarrollando"
+        />
+      </div>
+      <div class="column column-banner-dos">
+        <h2 class="h2-banner">
+          Soluciones creativas y funcionales para tu presencia digital
+        </h2>
+        <li class="li-banner">Diseño gráfico integral</li>
+        <li class="li-banner">Diseño y desarrollo web</li>
+        <li class="li-banner">Tiendas online</li>
+        <li class="li-banner">Diseño UI/UX</li>
+        <li class="li-banner">Optimización web y mantenimiento</li>
+        <li class="li-banner">Asesoramiento y consultoria</li>
+        <button class="btn-home margin-btn">
+          <a href="./pages/contacto.html">Contactame</a>
+        </button>
+      </div>
     </div>
 
     <!-- FOOTER -->
@@ -129,9 +180,11 @@
         ><img
           src="./img/Logo-Flor.png"
           alt="Logo Flor Van Meegroot Desarrolladora Web"
-          class="logo-footer"
-      /></a>
-
+          class="logo-footer saludo"
+      /></a><br>
+      <a class="link-footer" href="https://github.com/florvanmeegroot"
+        >Github</a
+      >
       <p>
         Desarrollado por Florencia Van Meegroot - Todos los derechos reservados
       </p>

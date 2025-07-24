@@ -1,0 +1,19 @@
+@mixin btn-estilo($bg-color, $color-texto, $bg-hover) {
+  background-color: $bg-color;
+  color: $color-texto;
+  padding: $padding-btn;
+  border: none;
+  font-size: 15px;
+  margin: 5px;
+  border-radius: $border-radius;
+  font-weight: 600;
+  font-family: $fuente-principal;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.8s ease;
+
+  &:hover {
+    background-color: $bg-hover;
+  }
+}

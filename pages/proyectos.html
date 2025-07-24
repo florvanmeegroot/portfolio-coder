@@ -7,6 +7,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- NUEVO CSS QUE USA SCSS -->
+    <link rel="stylesheet" href="../css/estilo.css" />
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +23,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="body-estudios">
+  <body class="body-color">
     <!-- HEADER -->
     <header>
       <a href="../index.html"
@@ -75,15 +79,14 @@
 
     <section class="seccion-web">
       <div class="primer-div-proyectos">
-        <h1 class="h1-estudios">Mis Proyectos<span>👩‍💻</span></h1>
+        <h1 class="h1-estudios">Mis Proyectos<span class="saludo iconos-pages">👩‍💻</span></h1>
         <p class="p-proyecto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas
-          modi nesciunt ullam porro optio, et voluptatum perferendis officia
-          vitae tempora aliquam consequuntur, corporis obcaecati facere deleniti
-          molestiae provident? Voluptas. Quisquam, aspernatur incidunt vitae
-          odit eum, praesentium doloribus nesciunt illum eos quo ipsam, quam
-          enim quod labore? Itaque excepturi in amet! Temporibus id quis ad
-          culpa omnis sint, iste assumenda.
+          A lo largo de mi carrera participé en diversos proyectos que me
+          desafiaron a aplicar conocimientos, resolver problemas reales y
+          colaborar con diferentes equipos de trabajo. Cada uno representa una
+          oportunidad en la que pude aportar valor y seguir fortaleciendo mi
+          experiencia profesional. En esta sección comparto algunos de los
+          proyectos más representativos que desarrollé en contextos laborales.
         </p>
       </div>
 
@@ -97,7 +100,7 @@
           />
           <h3 class="titulo-estudios">Sitio Web Concesionaria Autocity</h3>
           <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
-          <button class="btn-proyectos">
+          <button class="btn-home">
             <a href="https://www.autocity.com.ar" target="_blank"
               >Visitar Autocity</a
             >
@@ -112,7 +115,7 @@
           />
           <h3 class="titulo-estudios">Sitio Web Desarrollista Denat</h3>
           <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
-          <button class="btn-proyectos">
+          <button class="btn-home">
             <a href="https://www.denat.com.ar" target="_blank">Visitar Denat</a>
           </button>
         </div>
@@ -123,13 +126,56 @@
             src="../img/Accesorios-mockup.png"
             alt="Sitio web Accesorios Autocity Mockup"
           />
-          <h3 class="titulo-estudios">
-            Sitio Web de Accesorios para la Concesionaria Autocity
-          </h3>
+          <h3 class="titulo-estudios">Sitio Web de Accesorios para Autocity</h3>
           <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
-          <button class="btn-proyectos">
+          <button class="btn-home">
             <a href="https://www.accesorios.autocity.com.ar" target="_blank"
               >Visitar Accesorios Autocity</a
+            >
+          </button>
+        </div>
+
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/Alegria-Vegana.png"
+            alt="Sitio web Alegria Vegana Mockup"
+          />
+          <h3 class="titulo-estudios">Sitio Web Alegria Vegana</h3>
+          <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
+          <button class="btn-home">
+            <a href="https://alegriavegana.com.au/" target="_blank"
+              >Visitar Alegria Vegana</a
+            >
+          </button>
+        </div>
+
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/Scratch House.png"
+            alt="Sitio web Scratch House Mockup"
+          />
+          <h3 class="titulo-estudios">Sitio Web Scratch House</h3>
+          <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
+          <button class="btn-home">
+            <a href="https://scratch-house.com/" target="_blank"
+              >Visitar Scratch House</a
+            >
+          </button>
+        </div>
+
+        <div class="proyectos-flor">
+          <img
+            class="imagen-web"
+            src="../img/Grupo Kilowatts.png"
+            alt="Sitio web Grupo Kilowatts Mockup"
+          />
+          <h3 class="titulo-estudios">Sitio Web Grupo Kilowatts</h3>
+          <p class="p-proyecto">Sitio web desarrollado en WordPress</p>
+          <button class="btn-home">
+            <a href="https://grupokilowatt.com.ar/" target="_blank"
+              >Visitar Grupo Kilowatts</a
             >
           </button>
         </div>
@@ -139,7 +185,7 @@
     <div class="banner-proyecto">
       <div class="column">
         <div class="conteiner-titulo-home">
-          <h1 class="titulo-home"><span>👋</span> ¿Trabajamos juntos?</h1>
+          <h1 class="titulo-home"><span class="saludo">👋</span> ¿Trabajamos juntos?</h1>
         </div>
         <p class="p-banner">
           Contactame para saber como puedo ayudarte a alcanzar tus objetivos o
@@ -152,7 +198,7 @@
 
       <div class="column personaje">
         <img
-          class="img-flor"
+          class="img-flor entrar-derecha"
           src="../img/Flor-personaje-2.png"
           alt="Flor desarrollando"
         />
@@ -165,9 +211,11 @@
         ><img
           src="../img/Logo-Flor.png"
           alt="Logo Flor Van Meegroot Desarrolladora Web"
-          class="logo-footer"
-      /></a>
-
+          class="logo-footer saludo"
+      /></a><br>
+      <a class="link-footer" href="https://github.com/florvanmeegroot"
+        >Github</a
+      >
       <p>
         Desarrollado por Florencia Van Meegroot - Todos los derechos reservados
       </p>

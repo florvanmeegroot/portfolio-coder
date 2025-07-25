@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .body-color {
@@ -29,12 +30,17 @@ button.btn-home {
 
 /* HEADER & NAV */
 header {
-  background-color: #fbf1fbca;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fbf1fb;
   filter: drop-shadow(0 0.8mm 0.6mm rgba(161, 0, 210, 0.17));
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 nav {
@@ -54,6 +60,7 @@ nav {
 .img-logo {
   width: 15%;
   cursor: pointer;
+  animation: saludar 3s infinite;
 }
 
 /* Modificaciones de navbar de bootstrap */
@@ -439,7 +446,7 @@ p {
 
 .iconos-pages {
   font-size: 40px;
-  }
+}
 
 @keyframes saludar {
   0% {
@@ -491,8 +498,35 @@ p {
   }
 }
 
+/* BTN WHATSAPP*/
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1100;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5b;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
 /* MEDIAS QUERY */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .contenedor-step {
     display: flex;
     flex-direction: column;
@@ -520,6 +554,7 @@ p {
     padding: 50px 20px;
     background-image: url(../img/Portada-2-mobile.png);
     background-size: cover;
+    overflow-x: hidden;
   }
 
   .column {
@@ -557,6 +592,7 @@ p {
     padding: 50px 20px;
     background-image: url(../img/Portada-2-mobile.png);
     background-size: cover;
+    overflow-x: hidden;
   }
 
   .conteiner-btns {
@@ -569,6 +605,7 @@ p {
     flex-direction: column;
     height: 100vh;
     padding: 20px;
+    overflow-x: hidden;
   }
 
   .img-banner-dos {

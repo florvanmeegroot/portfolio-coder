@@ -20,22 +20,7 @@ Este es mi portfolio personal creado con HTML, CSS y SCSS. Aquí muestro mis pro
 - CSS3
 - SCSS
 - Git & GitHub
-
-## 📁 Estructura del proyecto
-
-/Portfolio-Flor/
-├── css/
-│ └── (archivos CSS)
-├── img/
-│ └── (imágenes usadas en el sitio)
-├── pages/
-│ ├── contacto.html
-│ ├── estudios.html
-│ ├── experiencia.html
-│ └── proyectos.html
-├── scss/
-│ └── (archivos SCSS)
-└── index.html
+- Bootstrap
 
 ## 📬 Contacto
 

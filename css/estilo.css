@@ -518,7 +518,7 @@ p {
 }
 
 /* MEDIAS QUERY */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .contenedor-step {
     display: flex;
     flex-direction: column;
@@ -592,6 +592,38 @@ p {
   }
   .column-banner-dos {
     margin-bottom: 100px;
+    padding: 30px;
+  }
+}
+/* ESTILOS PARA TABLET */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-estudios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .imagen-web {
+    width: 330px;
+    height: 420px;
+    margin-bottom: 10px;
+  }
+  .img-flor {
+    max-width: 80%;
+  }
+  .proceso {
+    gap: 8rem;
+  }
+  .logo-footer {
+    max-width: 6%;
+  }
+  .main-experiencia, .main-contacto {
+    min-height: 80vh;
+  }
+  #miAcordeon {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .column-banner-dos {
+    padding: 30px;
   }
 }
 
